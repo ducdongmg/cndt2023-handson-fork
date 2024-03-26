@@ -600,7 +600,7 @@ sample-app-blue-5fb8dc75fd-7cvxg   2/2     Ready    0          30s
 
 次に、実際にJaeger上からメトリクスを確認してみましょう。
 まず、`http://app.example.com/` に接続し、一定量のトレースデータを出力します。
-`http://jaeger.example.com/explore` に接続し、Service名に`sample-app-blue`を指定してみると、トレースデータが確認できます。
+`http://jaeger.example.com/search` に接続し、Service名に`handson-blue`を指定してみると、トレースデータが確認できます。
 今回は複雑なマイクロサービスではないため、シンプルな表示になっていますが、サービス間の通信がある場合はもう少し複雑なトレースデータを確認することができます。
 
 ![](./image/jaeger.png)
@@ -725,4 +725,4 @@ ingress.networking.k8s.io/java-ingress-by-nginx   nginx   app.example.com   10.9
 
 次に、実際にJaeger上からメトリクスを確認してみましょう。
 まず、`http://app.example.com/bff` に接続し、一定量のトレースデータを出力します。
-`http://jaeger.example.com/explore` に接続し、Service名に`bff`を指定してみると、トレースデータが確認できます。
+`http://jaeger.example.com/search` に接続し、Service名に`bff`を指定してみると、トレースデータが確認できます。
